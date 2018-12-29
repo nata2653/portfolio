@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+:root {
+    --color-p: #393737;
+    --color-h1: #555353;
+    --color-h2: #9a7d91;
+}
+
+h1 {
+    color: var(--color-h1);
+    font-family: itc-american-typewriter, serif;
+    font-weight: 100;
+}
+
+p {
+    color: var(--color-p);
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 200;
+}
+
+h2 {
+    color: var(--color-h2);
+    text-align: center;
+    font-family: 'Helvetica';
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* ----- NAV ----- */
+nav {
+    list-style-type: none;
+    overflow: hidden;
+
+    position: fixed;
+    width: 100vw;
+    text-align: right;
+    padding-top: 5px;
+    z-index: 1;
+}
+
+nav li {
+    display: inline-block;
+}
+
+a {
+    padding-right: 4vw;
+    text-decoration: none;
+    color: var(--color-p);
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* ----- INDEX ------ */
+
+.front_text {
+    padding-top: 8vw;
+}
+
+.front_text h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+#intro p {
+    color: var(--color-p);
+    text-align: center;
+    padding: 20px 80px 80px 80px;
+}
+
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 50%;
+    width: 80%;
+}
+
+#box {
+    flex-basis: 300px;
+    flex-grow: 1;
+
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+
+#box img:hover {
+    opacity: 0.5;
+}
+
+#box img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px 0px 10px 0px;
+}
+
+/* ------ CV ------ */
+
+li {
+    list-style-type: none;
+    font-weight: 200;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.bg_image {
+    padding-top: 80px;
+    height: 35vw;
+    position: relative;
+    background-image: linear-gradient(#FFE5E2, #BFACAA);
+    margin: 20px 20px 0px 30px;
+}
+
+.bg_image img {
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    left: 2vw;
+}
+
+.sectionwrapper {
+    flex-basis: 200px;
+    flex-grow: 1;
+
+    width: auto;
+    padding: 20px 20px 0px 30px;
+}
+
+.description {
+    font-weight: 200;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ededed;
+    font-size: 1rem;
+    height: 100%;
+    padding: 20px;
+}
+
+.description h2 {
+    font-size: 2.5rem;
+    padding: 40px 0px 30px 0px;
+}
+
+.description li {
+    font-family: itc-american-typewriter, serif;
+    font-style: italic;
+    color: var(--color-p);
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 1.4rem;
+}
+
+.description p {
+    padding: 40px 60px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.description li:last-child {
+    padding-bottom: 20px;
+}
+
+.section {
+    padding-top: 20px;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    padding: 40px 0px 10px 0px;
+}
+
+.section li {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1rem;
+    padding-right: 30px;
+    line-height: 1.5;
+}
+
+.so_me img {
+    width: 50px;
+    padding: 100px 30px 0px;
+}
+
+/*------ WEB ------ */
+
+#web {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.web_headline h1 {
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    font-size: 5rem;
+    font-style: italic;
+    border-bottom: 2vw #d19494 solid;
+}
+
+.column_web {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 800px;
+    flex-grow: 1;
+    border-bottom: 2vw #d19494 solid;
+}
+
+.column_web:last-child {
+    border-bottom: none;
+}
+
+.column_web img {
+    padding: 40px;
+    float: right;
+    width: 30vw;
+}
+
+.column_web p {
+    text-align: right;
+    padding-top: 150px;
+}
+
+/*
+.column_pic {
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+    flex-basis: 700px;
+    flex-grow: 1;
+    height: 40vw;
+    background-image: url(billeder/03_egetspil.png);
+    background-size: cover;
+    position: relative;
+}
+
+.column_pic:hover {
+    background-image: linear-gradient(rgba(250, 205, 236, 0.74), rgba(74, 106, 213, 0.6)), url(billeder/03_egetspil.png);
+}
+*/
+
+/*------ INDHOLD ------ */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.content_headline h1 {
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    font-size: 5rem;
+    font-style: italic;
+    border-bottom: 2vw #555353 solid;
+}
+
+.column_content {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 800px;
+    flex-grow: 1;
+    border-bottom: 2vw #555353 solid;
+}
+
+.column_content:last-child {
+    border-bottom: none;
+}
+
+.column_content img {
+    padding: 40px;
+    float: right;
+    width: 30vw;
+}
+
+.column_content p {
+    text-align: right;
+    padding-top: 150px;
+}
+
+/* ------ ANIMATION ------ */
+
+#animation {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.animation_headline h1 {
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    font-size: 5rem;
+    font-style: italic;
+    border-bottom: 2vw #9a7d91 solid;
+}
+
+.column_animation {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 800px;
+    flex-grow: 1;
+    border-bottom: 2vw #9a7d91 solid;
+}
+
+.column_animation:last-child {
+    border-bottom: none;
+}
+
+.column_animation img {
+    padding: 40px;
+    float: right;
+    width: 30vw;
+}
+
+.column_animation p {
+    text-align: right;
+    padding-top: 150px;
+}
+
+/* ------ UX WEB ------ */
+
+#uxw {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.uxw_headline h1 {
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    font-size: 5rem;
+    font-style: italic;
+    border-bottom: 2vw #2f2f76 solid;
+}
+
+.column_uxw {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 800px;
+    flex-grow: 1;
+    border-bottom: 2vw #2f2f76 solid;
+}
+
+.column_uxw:last-child {
+    border-bottom: none;
+}
+
+.column_uxw img {
+    padding: 40px;
+    float: right;
+    width: 30vw;
+}
+
+.column_uxw p {
+    text-align: right;
+    padding-top: 150px;
+}
+
+/* ------ UX APP ------ */
+
+#uxa {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.uxa_headline h1 {
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    font-size: 5rem;
+    font-style: italic;
+    border-bottom: 2vw #ba9aa0 solid;
+}
+
+.column_uxa {
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 800px;
+    flex-grow: 1;
+    border-bottom: 2vw #ba9aa0 solid;
+}
+
+.column_uxa:last-child {
+    border-bottom: none;
+}
+
+.column_uxa img {
+    padding: 40px;
+    float: right;
+    width: 30vw;
+}
+
+.column_uxa p {
+    text-align: right;
+    padding-top: 150px;
+}
